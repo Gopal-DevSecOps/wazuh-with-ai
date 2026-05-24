@@ -1,0 +1,52 @@
+header {
+    background: var(--bg-card);
+    padding: 20px 30px;
+    border-radius: var(--radius);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow);
+}
+
+header h1 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    letter-spacing: 0.5px;
+}
+
+.status-bar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+#connection-status {
+    padding: 5px 12px;
+    border-radius: var(--radius-sm);
+    font-weight: bold;
+}
+
+.status-connected {
+    background: var(--color-info);
+    color: #000;
+}
+
+.status-disconnected {
+    background: var(--color-critical);
+    color: #fff;
+}
+
+#last-updated {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}

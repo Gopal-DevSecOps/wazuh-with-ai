@@ -1,0 +1,108 @@
+.table-card {
+    grid-column: 1 / -1;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+th {
+    background: var(--border-color);
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: var(--text-primary);
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+}
+
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+tr:hover {
+    background: rgba(52, 152, 219, 0.08);
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.level-badge.level-critical {
+    background: var(--color-critical);
+    color: #fff;
+}
+
+.level-badge.level-warning {
+    background: var(--color-warning);
+    color: #000;
+}
+
+.level-badge.level-info {
+    background: var(--color-info);
+    color: #000;
+}
+
+.level-critical-row {
+    border-left: 3px solid var(--color-critical);
+}
+
+.level-warning-row {
+    border-left: 3px solid var(--color-warning);
+}
+
+.level-info-row {
+    border-left: 3px solid var(--color-info);
+}
+
+.desc-cell {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btn-view {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: opacity var(--transition);
+}
+
+.btn-view:hover {
+    opacity: 0.8;
+}
+
+.loading-row {
+    text-align: center;
+    padding: 30px;
+    color: var(--text-muted);
+}
+
+.loading-row.error {
+    color: var(--color-critical);
+}
+
+.table-footer {
+    margin-top: 10px;
+    text-align: right;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+}
